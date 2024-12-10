@@ -22,42 +22,73 @@
         <a-sky atmosphere="color:#f2f7ff"></a-sky>
         <a-light type="ambient" color="#222" position="0 33.8427 0"></a-light>
         <a-entity environment="preset:goldmine; dressing:none; skyType:color; skyColor:#f2f7ff; groundColor:#f2f7ff; dressingAmount:1; ground:flat"></a-entity>
+        
         <!--Textos y obras de la galería-->
-        <a-entity
-         text="value:ENCUÉNTRAME AQUÍ;
-         font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json;
-         fontImage: assets/fonts/abcorregido-msdf/abcorregido.png;
-         negate:false;
-         color:black;
-         letterSpacing:4;"
-         scale="2 2 1"
-         position="0 2 0">
-        </a-entity>
-        <a-entity
-         text="value:Atistas:\n Hannah Starkey.\n Juan Pablo Echeverri.\n Claude Cahun.\n Graciela Iturbide.;
-         font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json;
-         fontImage: assets/fonts/abcorregido-msdf/abcorregido.png;
-         negate:false;
-         color:black;
-         letterSpacing:4;"
-         scale="2 2 1"
-         position="0 1.7 0">
-        </a-entity>
+
+            <!--Títulos-->
+            <a-entity
+            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="2 2 1" position="-0.18425 3.53962 9.68596">
+            </a-entity>
+
+            <!--Artistas-->
+            <a-entity 
+            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-3.61293 1.39336 0.33296" rotation="0 90.9908544869309 0">
+            </a-entity>
+            <a-entity 
+            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="3.77131 1.31682 2.91602" rotation="0 -88.5557838576249 0">
+            </a-entity>
+            <a-entity 
+            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="3.46238 1.3774 -0.29064" rotation="0 -92.3848608024842 0">
+            </a-entity>
+            <a-entity
+            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-4.01741 1.32345 -2.17238" rotation="0 90.9908544869309 0">
+            </a-entity>
+
+            <!--Textos Curatoriales-->
+                <!--General de la Galería-->
+                <a-entity 
+                text="value:¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses; tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define; lo que te hace ser tú. Encuentra en ti todos esos pensamientos; preferencias; pronombres; vestimentas; lugares; sentimientos; relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen; a ti. Esa es tu identidad; esa es la identidad;
+                font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json;
+                fontImage: assets/fonts/abcorregido-msdf/abcorregido.png;
+                negate:false;
+                color:black;
+                letterSpacing:4;"
+                scale="5.33196 5.66266 3"
+                position="0 1.7 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="5.33196 5.66266 3" position="0.73276 4.6752 -3.98996">
+                </a-entity>
+                <a-entity 
+                text="value:En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención;
+                font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json;
+                fontImage: assets/fonts/abcorregido-msdf/abcorregido.png;
+                negate:false;
+                color:black;
+                letterSpacing:4;"
+                scale="5.33196 5.66266 3"
+                position="0 1.7 0">
+                </a-entity>
+        
         <!--Movilidad a través del Laberinto (aún no se cuentan con colisiones)-->
         <a-entity id="rig" movement-controls position="0 0 5">
             <a-entity id="camera"
                       camera
                       position="0 1.6 0"
                       look-controls="pointerLockEnabled: true"></a-entity>
+                      <a-cursor></a-cursor>
           </a-entity>
-        <!--Primitivos y estrutura del Laberinto-->
+        
+          <!--Primitivos y estrutura del Laberinto-->
         <a-box static-body="sphereRadius: NaN" position="-17.837 2.31825 -20.729" rotation="0 -90 0" color="#929393" scale="35.542 5.14794 0.6" velocity=""></a-box>
         <a-box static-body="sphereRadius: NaN" position="17.58614 2.31825 -18.37314" rotation="0 -90 0" color="#929393" scale="30.32355 5.14794 0.6" velocity=""></a-box>
-        <a-box static-body="sphereRadius: NaN" position="-11.0513 2.31825 -3.18112" rotation="0.402 -179.96 0.265" color="#929393" scale="14.07484 5.14794 0.6" velocity=""></a-box>
-        <a-box static-body="sphereRadius: NaN" position="10.83354 2.31825 -3.181" rotation="0.402 -179.96 0.265" color="#929393" scale="14.075 5.148 0.6" velocity=""></a-box>
-        <a-box static-body="sphereRadius: NaN" position="-4.31364 1.13344 0.00351" rotation="0 -90 0" color="#929393" scale="6.966 2.84307 0.6" velocity=""></a-box>
-        <a-box static-body="sphereRadius: NaN" position="4.09448 1.13344 0.00351" rotation="0 -90 0" color="#929393" scale="6.966 2.84307 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-11.09707 2.2826 -3.25002" rotation="0.402 -179.96 0.265" color="#929393" scale="14.075 5.148 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="10.85797 2.318 -3.182" rotation="0.402 -179.96 0.265" color="#929393" scale="14.075 5.148 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-4.35808 1.13344 0.06801" rotation="0 -90 0" color="#929393" scale="6.966 2.84307 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="4.11005 1.208 0.02024" rotation="-0.516 -90 0" color="#929393" scale="6.966 2.843 0.6" velocity=""></a-box>
         <a-box static-body="sphereRadius: NaN" position="2.48984 2.31825 -38.23118" rotation="0.383 -179.896 0.252" color="#929393" scale="30.76075 5.14794 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-0.03049 3.57485 -7.8046" rotation="0.383 -179.896 0.252" color="#929393" scale="29.979 7.40858 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-11.96367 2.28661 -12.26747" rotation="0.402 -179.96 0.265" color="#929393" scale="12.05246 5.148 0.6" velocity=""></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-12.77504 2.2481 -15.24228" rotation="0.7671904876801725 -89.84780368564492 0.930483459292457" color="#929393" scale="6.17844 5.148 0.6" velocity=""></a-box>
     </a-scene>
 </body>
 </html>
